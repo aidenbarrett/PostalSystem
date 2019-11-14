@@ -18,8 +18,9 @@ public:
     : id(id), letter(letter), deliveryAddress(deliveryAddress), returnAddress(returnAddress), postOffice(postOffice), sent(sent), received(received) { }
     
     void changePostOffice(PostOffice& postOffice);
-    void sendLetter();
-    void receiveLetter();
+    
+    void sendLetters();
+    void receiveLetters();
     
     //Setters/Getters
     void setSent();

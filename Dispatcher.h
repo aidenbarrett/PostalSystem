@@ -7,12 +7,19 @@
 //
 
 #include <iostream>
+#include <vector>
 
-class Dispatcher {
+class Dispatcher : public LetterExchange {
 public:
-    Dispatcher() { }
+    Dispatcher(LocalSortingOffice& localSortingOffice) : localSortingOffice(localSortingOffice) { }
+    
+    void sendLetters();
+    void receiveLetters();
+    
+    void addPostalOperator(PostalOperator& postalOperator);
     
 private:
-
+    vector<PostalOperator&> postalOperators;
+    LocalSortingOffice& localSortingOffice;
     
 };

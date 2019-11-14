@@ -11,7 +11,7 @@
 
 class LetterExchange {
     
-    virtual sendLetter() = 0;
-    virtual receiveLetter() = 0;
+    virtual sendLetters() = 0;
+    virtual receiveLetters() = 0;
     
 };
