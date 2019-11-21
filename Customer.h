@@ -20,7 +20,6 @@ public:
     void changePostOffice(PostOffice& postOffice);
     
     void sendLetters();
-    void receiveLetters();
     
     //Setters/Getters
     void setSent();
@@ -28,6 +27,7 @@ public:
     
     bool getSent();
     bool getReceived();
+    string getDeliveryAddress();
     
 private:
     Letter& letter;

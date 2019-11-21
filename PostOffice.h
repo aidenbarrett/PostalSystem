@@ -20,10 +20,10 @@ public:
     void addPostalOperator(PostalOperator& postalOperator);
     
     // sending to postal operator to dispatcher scenerio
-    void passForDispatcher();
+    void passToDispatcher();
     
     // sending to postal operator to deliver to customer scenerio
-    void passForCustomer();
+    void passToPostMan();
     
 private:
     Letter& letter;

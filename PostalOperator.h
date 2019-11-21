@@ -44,9 +44,6 @@ public:
     void receiveLetters(); // same for receive letter
     bool isEmpty();
     
-    
-   
- 
 private:
     vector<Letter&> letters;
     Dispatcher& dispatcher;
